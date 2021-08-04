@@ -1,0 +1,12 @@
+.btn-brand {
+  background-image: linear-gradient(75deg, #8fcc78, #8ff386);
+  border-color: transparent;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.text-brand {
+  color: #8fcc78;
+}
+* {
+  font-family: "Nunito", sans-serif;
+}
