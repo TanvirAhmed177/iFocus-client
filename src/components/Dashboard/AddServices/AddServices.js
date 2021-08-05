@@ -32,7 +32,7 @@ const AddServices = () => {
       detail: data.detail,
       imageUrl: imageUrl,
     };
-    fetch("http://localhost:5000/addServices", {
+    fetch("https://desolate-castle-51363.herokuapp.com/addServices", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(serviceData),

@@ -7,7 +7,7 @@ import Sidebar from "../Sidebar/Sidebar";
 const ManageService = () => {
   const [services, setServices] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/services")
+    fetch("https://desolate-castle-51363.herokuapp.com/services")
       .then((res) => res.json())
       .then((data) => {
         setServices(data);
@@ -16,7 +16,7 @@ const ManageService = () => {
 
   const handleDelete = (id) => {
     console.log(id);
-    fetch(`http://localhost:5000/deleteService/${id}`, {
+    fetch(`https://desolate-castle-51363.herokuapp.com/deleteService/${id}`, {
       method: "DELETE",
     })
       .then((res) => res.json())

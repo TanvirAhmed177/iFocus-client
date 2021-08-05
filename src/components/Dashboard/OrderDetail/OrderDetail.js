@@ -8,11 +8,14 @@ const OrderDetail = ({ order }) => {
     const statusData = {
       status: data.status,
     };
-    fetch(`http://localhost:5000/updateOrders/${order._id}`, {
-      method: "PATCH",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(statusData),
-    })
+    fetch(
+      `https://desolate-castle-51363.herokuapp.com/updateOrders/${order._id}`,
+      {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(statusData),
+      }
+    )
       .then((res) => res.json())
       .then((result) => {
         alert("Service updated successfully");

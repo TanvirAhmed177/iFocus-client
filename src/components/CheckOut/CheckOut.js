@@ -27,7 +27,7 @@ const Checkout = () => {
   console.log(email);
 
   useEffect(() => {
-    fetch("http://localhost:5000/services/" + name)
+    fetch("https://desolate-castle-51363.herokuapp.com/services/" + name)
       .then((res) => res.json())
       .then((data) => setServices(data));
   }, [name]);
@@ -43,7 +43,7 @@ const Checkout = () => {
       phone: phnEl.current.value,
       recEmail: emailEl.current.value,
     };
-    fetch("http://localhost:5000/addOrders", {
+    fetch("https://desolate-castle-51363.herokuapp.com/addOrders", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(newOrder),
