@@ -58,7 +58,6 @@ const Checkout = () => {
 
   return (
     <Container fluid className="m-0 p-0">
-      <Navbar></Navbar>
       <Container>
         <Row className="p-5">
           <Col>

@@ -44,7 +44,8 @@ const Login = () => {
       .auth()
       .signInWithEmailAndPassword(email, password)
       .then(function (result) {
-        history.replace(from);
+        authListener();
+
         // ...
       })
       .catch((err) => {
@@ -98,6 +99,7 @@ const Login = () => {
         clearInputs();
 
         setUser(user);
+        history.replace(from);
         console.log(user);
       } else {
         setUser("");
@@ -105,13 +107,9 @@ const Login = () => {
     });
   };
 
-  useEffect(() => {
-    authListener();
-  }, []);
   return (
     <div>
       <Navbar></Navbar>
-
       <section className="login">
         <div className="loginContainer">
           <label htmlFor="">Username</label>

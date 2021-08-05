@@ -7,11 +7,13 @@ const Contact = () => {
         <div className="row">
           <div className="col-md-5 col-sm-6 mt-5">
             <h1 className="contactHeader mt-5 mb-4">
-              Let us handle your <br></br> CAR, professionally.
+              YOU'VE MADE IT TO STEP ONE TO BOOK WITH ME, YASSSSSS!
             </h1>
             <p>
-              With well trained professionals, we repair your cars with care and
-              professionalism for last five years.
+              I would love to hear from your beautiful face and get to know YOU.
+              Here is where you can connect your ideas with me on what you could
+              like to create, the memories I can capture, and the fun that is
+              ahead.
             </p>
           </div>
 

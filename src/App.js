@@ -14,6 +14,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Dashboard from "./components/Dashboard/Dashboard/Dashboard";
 import ManageService from "./components/Dashboard/ManageService/ManageService";
 import ViewMore from "./components/Home/ServiceDetail/ViewMore";
+import Navbar from "./components/Shared/Navbar/Navbar";
+import fire from "./components/Login/Login/firebase.config";
 
 export const UserContext = createContext();
 
@@ -23,7 +25,6 @@ function App() {
     password: "",
   });
 
-  
   return (
     <UserContext.Provider value={[user, setUser]}>
       <Router>

@@ -4,7 +4,7 @@ import { UserContext } from "../../../App";
 
 const PrivateRoute = ({ children, ...rest }) => {
   const [user] = useContext(UserContext);
-
+  console.log(user.email);
   return (
     <Route
       {...rest}
