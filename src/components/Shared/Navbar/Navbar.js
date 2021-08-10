@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { Nav, Navbar as NavBar, Container, Col, Row } from "react-bootstrap";
 import { UserContext } from "../../../App";
+import Logo from "../../../images/BB.png";
 
 const Navbar = ({ handleLogOut }) => {
   const [user, setUser] = useContext(UserContext);
@@ -21,14 +22,11 @@ const Navbar = ({ handleLogOut }) => {
             <NavBar.Brand className="pl-4 text-brand">
               {" "}
               <Link
-                className="nav-link mr-3 text-brand text-decoration-none"
+                className="nav-link p-0 m-0 mtext-brand text-bold text-decoration-none"
                 to="/"
-                style={{
-                  textDecoration: "none",
-                  fontStyle: "oblique",
-                }}
+                style={{}}
               >
-                inFocus.
+                <img src={Logo} height="45px" width="90" alt="" />
               </Link>
             </NavBar.Brand>
             <NavBar.Toggle aria-controls="responsive-navbar-nav" />
