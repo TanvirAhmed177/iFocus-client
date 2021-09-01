@@ -25,10 +25,16 @@ const Services = () => {
             <h2>Our photography services</h2>
           </div>
         </div>
-        <div className="row">
-          {services.map((service) => (
-            <ServiceDetail service={service}></ServiceDetail>
-          ))}
+
+        <div id="cards_landscape_wrap-2">
+          <div className="container">
+            <div className="row">
+              {" "}
+              {services.map((service) => (
+                <ServiceDetail service={service}></ServiceDetail>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>

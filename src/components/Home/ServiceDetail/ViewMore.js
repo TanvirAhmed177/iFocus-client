@@ -33,7 +33,7 @@ function ViewMore() {
           </div>
         </div>
         <div className="row">
-          <div className="col-md-12 text-center">
+          <div className="col-md-12 text-center mb-5">
             <p>
               {detail} Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Atque expedita nemo provident vel qui deleniti velit, illo ipsam

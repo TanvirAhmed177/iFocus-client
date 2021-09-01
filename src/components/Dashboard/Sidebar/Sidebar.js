@@ -29,54 +29,64 @@ const Sidebar = () => {
   }, []);
 
   return (
-    <div
-      className="sidebar d-flex flex-column justify-content-between col-md-2 py-5 px-4"
-      style={{ height: "100vh" }}
-    >
-      <ul className="list-unstyled">
-        <li>
-          <li>
-            <Link to="/addReviews" className="text-white">
-              <FontAwesomeIcon icon={faComment} /> <span>Add Reviews</span>
-            </Link>
-          </li>
-          <Link to="/" className="text-white">
-            <FontAwesomeIcon icon={faHome} /> <span>Home</span>
-          </Link>
-        </li>
-        {isAdmin && (
-          <div>
-            <li>
-              <Link to="/adminDashboard" className="text-white">
-                <FontAwesomeIcon icon={faGripHorizontal} />{" "}
-                <span>Manage Orders</span>
-              </Link>
-            </li>
-            <li>
-              <Link to="/addServices" className="text-white">
-                <FontAwesomeIcon icon={faPlus} /> <span>Add Services</span>
-              </Link>
-            </li>
-            <li>
-              <Link to="/addAdmin" className="text-white">
-                <FontAwesomeIcon icon={faUserPlus} /> <span>Add Admin</span>
-              </Link>
-            </li>
+    <section>
+      <div className="row">
+        <div className="col-md-2 col-sm-6 col-12">
+          <div
+            className="sidebar d-flex flex-column justify-content-between col-md-2 py-5 px-4"
+            style={{ height: "100vh" }}
+          >
+            <ul className="list-unstyled">
+              <li>
+                <li>
+                  <Link to="/addReviews" className="text-white">
+                    <FontAwesomeIcon icon={faComment} />{" "}
+                    <span>Add Reviews</span>
+                  </Link>
+                </li>
+                <Link to="/" className="text-white">
+                  <FontAwesomeIcon icon={faHome} /> <span>Home</span>
+                </Link>
+              </li>
+              {isAdmin && (
+                <div>
+                  <li>
+                    <Link to="/adminDashboard" className="text-white">
+                      <FontAwesomeIcon icon={faGripHorizontal} />{" "}
+                      <span>Manage Orders</span>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/addServices" className="text-white">
+                      <FontAwesomeIcon icon={faPlus} />{" "}
+                      <span>Add Services</span>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/addAdmin" className="text-white">
+                      <FontAwesomeIcon icon={faUserPlus} />{" "}
+                      <span>Add Admin</span>
+                    </Link>
+                  </li>
 
-            <li>
-              <Link to="/manage" className="text-white">
-                <FontAwesomeIcon icon={faCog} /> <span>Manage Service</span>
+                  <li>
+                    <Link to="/manage" className="text-white">
+                      <FontAwesomeIcon icon={faCog} />{" "}
+                      <span>Manage Service</span>
+                    </Link>
+                  </li>
+                </div>
+              )}
+            </ul>
+            <div>
+              <Link to="/" className="text-white">
+                <FontAwesomeIcon icon={faSignOutAlt} /> <span>Logout</span>
               </Link>
-            </li>
+            </div>
           </div>
-        )}
-      </ul>
-      <div>
-        <Link to="/" className="text-white">
-          <FontAwesomeIcon icon={faSignOutAlt} /> <span>Logout</span>
-        </Link>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -92,22 +92,37 @@ const Checkout = () => {
                   />
                 </div>
                 <div className="d-flex justify-content-center">
-                  <label htmlFor="date" className="pr-2 pt-1">
+                  <label htmlFor="name" className="pr-2 pt-1 h5">
                     Name:{" "}
                   </label>
-                  <input type="text" ref={nameEl} />
+                  <input
+                    type="text"
+                    ref={nameEl}
+                    className="shadow-sm rounded border-0 px-5"
+                    style={{ backgroundColor: "azure" }}
+                  />
                 </div>
                 <div className="d-flex justify-content-center pt-2">
-                  <label htmlFor="date" className="pr-2 pt-1">
+                  <label htmlFor="phone" className="pr-2 pt-1 h5">
                     Phone:{" "}
                   </label>
-                  <input type="tel" ref={phnEl} />
+                  <input
+                    type="tel"
+                    ref={phnEl}
+                    className="shadow-sm rounded border-0 px-5"
+                    style={{ backgroundColor: "azure" }}
+                  />
                 </div>
                 <div className="d-flex justify-content-center pt-2">
-                  <label htmlFor="date" className="pr-2 pt-1">
+                  <label htmlFor="email" className="pr-3 pt-1 h5 ">
                     Email:{" "}
                   </label>
-                  <input type="email" ref={emailEl} />
+                  <input
+                    type="email"
+                    ref={emailEl}
+                    className="shadow-sm rounded border-0 px-5"
+                    style={{ backgroundColor: "azure" }}
+                  />
                 </div>
                 <p>
                   {" "}
